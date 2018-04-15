@@ -82,13 +82,21 @@ if (!isset($grid)) { ?>
     </div>
       <div class="featured--grid0">
     <div class="featured--media">
-      <p>Twitter</p>
-      <p>Facebook</p>
-      <p>Instragram</p>
+
+      <a href="">
+        <i class="fab fa-facebook-f"> 21562 Fans <span>LIKE</span></i>
+      </a>
+      <a href="#">
+      <div class="color-twitter">
+      <i class="fab fa-twitter"> 1401 Followers <span>FOLLOW</span> </i>
+      </div>
+      </a>
+      <a href="#">
+      <i class="fab fa-instagram"> 23358 Followers <span>FOLLOW</span> </i>
+      </a>
     </div>
 
     <div class="featured--pub">
-      <img src="assets/images/pub.jpg" alt="" width="300" height="450">
     </div>
 
   </div>

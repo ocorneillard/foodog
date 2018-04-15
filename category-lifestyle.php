@@ -1,12 +1,11 @@
 <?php get_header(); ?>
 
 
-<div class="lifestyle">
+<div class="category">
   <h2>Lifestyle</h2>
 </div>
 
 <section class="featured--posts">
-    <h5><span>FEATURED POSTS    </span></h5>
     <div class="featured--grid">
     <?php
       $args = array(
@@ -54,3 +53,5 @@
 
   </div>
 </section>
+</div>
+<?php get_footer(); ?>

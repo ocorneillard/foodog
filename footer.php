@@ -1,7 +1,7 @@
 
 <footer>
   <div class="footer-cat">
-    <?php wp_list_categories(array('exclude' => 5,)); ?>
+    <?php wp_list_categories(array('title_li' => '','exclude' => 5,)); ?>
   </div>
   <div class="footer-popular">
 
@@ -21,4 +21,3 @@ aaaaaa categories
  -->
 
 <?php $t = wpp_get_mostpopular(); ?>
-<?php print_r($t); ?>

@@ -1,1 +1,1 @@
-Single 
+<?php get_header(); ?>

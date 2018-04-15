@@ -6,6 +6,7 @@ $test = $test + 1;
 if (!isset($grid)) { ?>
 
 <!-- Popular posts -->
+
 <section class='popular--posts'>
     <div class="popular--1">
 
@@ -23,7 +24,7 @@ if (!isset($grid)) { ?>
 
   <div class="popular--2">
     <a href="<?php the_permalink(); ?>">
-    <?php the_post_thumbnail(); ?>
+    <?php the_post_thumbnail('small'); ?>
     </a>
 
     <div class="popular--sub">
@@ -87,7 +88,7 @@ if (!isset($grid)) { ?>
     </div>
 
     <div class="featured--pub">
-      <img src="#" alt="" width="300" height="450">
+      <img src="assets/images/pub.jpg" alt="" width="300" height="450">
     </div>
 
   </div>
@@ -96,6 +97,9 @@ if (!isset($grid)) { ?>
 <div class="latest--title">
     <h5><span>LATEST POSTS     </span></h5>
 </div>
+
+<!-- latest posts -->
+
 <section class="latest--posts">
 <?php
 $args = array(
@@ -111,7 +115,7 @@ if ( $arr_posts->have_posts() ) :
 ?>
 
     <div class="latest--posts--a">
-      <a href="#"><img src="st.png" alt="" width="350" height="250"></a>
+      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('featured'); ?></a>
       <div class="categories">
         <?php the_category( ' ' ); ?>
       </div>
@@ -125,3 +129,6 @@ if ( $arr_posts->have_posts() ) :
 <div class="pagination--latest">
 
 </div>
+</div>
+
+<?php get_footer(); ?>

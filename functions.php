@@ -28,12 +28,33 @@ function style(){
   echo "<link rel='stylesheet' href='http://localhost/wordpress/wp-content/themes/foodog/style.css'>\n";
 }
 
+add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 220, 200);
-add_image_size( 'big-one', 640, 430 );
-add_image_size('featured', 350,250);
+
+function add_custom_sizes() {
+	add_image_size('small', 220, 200, true);
+	add_image_size( 'big-one', 640, 430, true);
+	add_image_size('featured', 350,250, true);
+}
+
+add_action('after_setup_theme','add_custom_sizes');
+
 
 function new_excerpt_length($length) {
 return 20;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
+
+function widgets_init() {
+register_sidebar( array(
+'name' => __( 'Scrisoft Sidebar', 'scrisoft' ),
+'id' => 'sidebar-1',
+'before_title' => '
+',
+'after_title' => '
+
+',
+));
+}
+add_action('widgets_init', 'widgets_init');
 ?>

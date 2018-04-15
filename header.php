@@ -11,6 +11,7 @@
   <?php style(); ?>
 </head>
 <body>
+  <div class="main">
   <h1>FooDog</h1>
   <div class="menu">
     <ul>

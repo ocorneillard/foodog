@@ -12,7 +12,7 @@
   <?php style(); ?>
 </head>
 <body>
-  <div class="main">
+  <div class="dorian--index--cat">
   <h1><a href="<?php echo home_url(); ?>">FooDog</a></h1>
   <div class="menu">
     <ul>

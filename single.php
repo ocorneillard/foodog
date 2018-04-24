@@ -18,7 +18,7 @@
 </div>
 
 <div class="featured--pub">
-  <img src="assets/images/pub.jpg" alt="" width="300" height="450">
+  <?php get_sidebar(); ?>
 </div>
 
 </div>

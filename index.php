@@ -137,6 +137,6 @@ if ( $arr_posts->have_posts() ) :
 <div class="pagination--latest">
 
 </div>
-</div>
+<!-- </div> -->
 
 <?php get_footer(); ?>
